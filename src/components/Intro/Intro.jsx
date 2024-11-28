@@ -28,20 +28,26 @@ const Intro = () => {
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span>Andrew Thomas</span>
-          <span>
-            Frontend Developer with high level of experience in web designing
-            and development, producting the Quality work
-          </span>
+          <span>Christian Fernando</span>
+          <span>Frontend Developer with high level of experience in web designing and development, producting the Quality work</span>
         </div>
         <Link to="contact" smooth={true} spy={true}>
           <button className="button i-button">Hire me</button>
         </Link>
         {/* social icons */}
         <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
+          <a href="https://github.com/Christian96-oss">
+            {" "}
+            <img src={Github} alt="" />
+          </a>
+          <a href="https://www.linkedin.com/feed/">
+            {" "}
+            <img src={LinkedIn} alt="" />
+          </a>
+          <a href="https://www.instagram.com/digitalcreation36/">
+            {" "}
+            <img src={Instagram} alt="" />
+          </a>
         </div>
       </div>
       {/* right image side */}
@@ -50,30 +56,14 @@ const Intro = () => {
         <img src={Vector2} alt="" />
         <img src={boy} alt="" />
         {/* animation */}
-        <motion.img
-          initial={{ left: "-36%" }}
-          whileInView={{ left: "-24%" }}
-          transition={transition}
-          src={glassesimoji}
-          alt=""
-        />
+        <motion.img initial={{ left: "-36%" }} whileInView={{ left: "-24%" }} transition={transition} src={glassesimoji} alt="" />
 
-        <motion.div
-          initial={{ top: "-4%", left: "74%" }}
-          whileInView={{ left: "68%" }}
-          transition={transition}
-          className="floating-div"
-        >
+        <motion.div initial={{ top: "-4%", left: "74%" }} whileInView={{ left: "68%" }} transition={transition} className="floating-div">
           <FloatinDiv img={crown} text1="Web" text2="Developer" />
         </motion.div>
 
         {/* animation */}
-        <motion.div
-          initial={{ left: "9rem", top: "18rem" }}
-          whileInView={{ left: "0rem" }}
-          transition={transition}
-          className="floating-div"
-        >
+        <motion.div initial={{ left: "9rem", top: "18rem" }} whileInView={{ left: "0rem" }} transition={transition} className="floating-div">
           {/* floatinDiv mein change hy dark mode ka */}
           <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
         </motion.div>
